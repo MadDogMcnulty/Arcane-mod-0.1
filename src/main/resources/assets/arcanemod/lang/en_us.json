@@ -1,9 +1,12 @@
 {
-  "item.arcanemod.gemstone": "Unrefined Hextech Gemstone",
+  "item.arcanemod.gemstone_shard": "Hex Crystal Shard",
+  "item.arcanemod.gemstone": "Unrefined Hex Crystal",
   "item.arcanemod.refined_gemstone": "Refined Hextech Gemstone",
 
   "block.arcanemod.gemstone_block": "Hextech Block",
   "block.arcanemod.piltover_block": "Piltover Block",
+  "block.arcanemod.gemstone_ore": "Hex Crystal Ore",
+  "block.arcanemod.deepslate_gemstone_ore": "Deepslate Hex Crystal Ore",
 
   "creativetab.arcane_tab": "Arcane Mod"
 }

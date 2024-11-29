@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "arcanemod:gemstone_shard"
+    }
+  },
+  "result": {
+    "item": "arcanemod:gemstone"
+  }
+}

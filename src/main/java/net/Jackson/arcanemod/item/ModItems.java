@@ -11,6 +11,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ArcaneMod.MOD_ID);
 
+    public static final RegistryObject<Item> GEMSTONE_SHARD = ITEMS.register("gemstone_shard",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> GEMSTONE = ITEMS.register("gemstone",
             () -> new Item(new Item.Properties()));
