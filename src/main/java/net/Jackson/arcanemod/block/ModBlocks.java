@@ -22,7 +22,10 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> GEMSTONE_BLOCK = registerBlock("gemstone_block",
-            () -> new Block (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new Block (BlockBehaviour.Properties.copy(Blocks.SHROOMLIGHT).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> PILTOVER_BLOCK = registerBlock("piltover_block",
+            () -> new Block (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.POLISHED_DEEPSLATE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

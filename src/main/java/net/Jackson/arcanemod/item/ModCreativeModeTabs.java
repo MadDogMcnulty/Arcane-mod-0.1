@@ -22,7 +22,9 @@ public class ModCreativeModeTabs {
                 .displayItems((pParameters, pOutput) -> {
                       pOutput.accept(ModItems.GEMSTONE.get());
                       pOutput.accept(ModItems.REFINED_GEMSTONE.get());
+
                       pOutput.accept(ModBlocks.GEMSTONE_BLOCK.get());
+                      pOutput.accept(ModBlocks.PILTOVER_BLOCK.get());
                 })
                 .build());
 
