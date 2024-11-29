@@ -2,6 +2,7 @@ package net.Jackson.arcanemod.item;
 
 
 import net.Jackson.arcanemod.ArcaneMod;
+import net.Jackson.arcanemod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,8 +22,7 @@ public class ModCreativeModeTabs {
                 .displayItems((pParameters, pOutput) -> {
                       pOutput.accept(ModItems.GEMSTONE.get());
                       pOutput.accept(ModItems.REFINED_GEMSTONE.get());
-
-
+                      pOutput.accept(ModBlocks.GEMSTONE_BLOCK.get());
                 })
                 .build());
 

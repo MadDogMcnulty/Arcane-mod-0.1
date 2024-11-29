@@ -1,6 +1,7 @@
 package net.Jackson.arcanemod;
 
 import com.mojang.logging.LogUtils;
+import net.Jackson.arcanemod.block.ModBlocks;
 import net.Jackson.arcanemod.item.ModCreativeModeTabs;
 import net.Jackson.arcanemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,7 @@ public class ArcaneMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -52,10 +54,7 @@ public class ArcaneMod
 
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.GEMSTONE);
-            event.accept(ModItems.REFINED_GEMSTONE);
-        }
+
 
     }
 

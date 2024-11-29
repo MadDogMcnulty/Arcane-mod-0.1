@@ -1,4 +1,8 @@
 {
-  "item.arcanemod.gemstone": "Gemstone",
-  "item.arcanemod.refined_gemstone": "Refined Gemstone"
+  "item.arcanemod.gemstone": "Unrefined Hextech Gemstone",
+  "item.arcanemod.refined_gemstone": "Refined Hextech Gemstone",
+
+  "block.arcanemod.gemstone_block": "Hextech Block",
+
+  "creativetab.arcane_tab": "Arcane Mod"
 }
