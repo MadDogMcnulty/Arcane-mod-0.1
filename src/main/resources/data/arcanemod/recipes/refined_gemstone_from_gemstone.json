@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.1,
+  "ingredient": {
+    "item": "arcanemod:gemstone"
+  },
+  "result": "arcanemod:refined_gemstone",
+
+  "comment": "Change this to become shards at some point or something, this is a placeholder"
+}
+
+
