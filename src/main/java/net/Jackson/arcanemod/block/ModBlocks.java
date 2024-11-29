@@ -21,6 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ArcaneMod.MOD_ID);
 
 
+
     public static final RegistryObject<Block> GEMSTONE_BLOCK = registerBlock("gemstone_block",
             () -> new Block (BlockBehaviour.Properties.copy(Blocks.SHROOMLIGHT).sound(SoundType.AMETHYST)));
 
