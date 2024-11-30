@@ -1,6 +1,7 @@
 package net.Jackson.arcanemod.item;
 
 import net.Jackson.arcanemod.ArcaneMod;
+import net.Jackson.arcanemod.item.custom.RefinedGemstoneItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,7 +19,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_GEMSTONE = ITEMS.register("refined_gemstone",
-            () -> new Item(new Item.Properties()));
+            () -> new RefinedGemstoneItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
