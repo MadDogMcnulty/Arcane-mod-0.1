@@ -3,14 +3,13 @@ package net.Jackson.arcanemod.block;
 import net.Jackson.arcanemod.ArcaneMod;
 import net.Jackson.arcanemod.block.custom.SoundBlock;
 import net.Jackson.arcanemod.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,6 +29,40 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PILTOVER_BLOCK = registerBlock("piltover_block",
             () -> new Block (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.POLISHED_DEEPSLATE)));
+
+    public static final RegistryObject<Block> PILTOVER_STAIRS = registerBlock("piltover_stairs",
+            () -> new StairBlock(() -> ModBlocks.PILTOVER_BLOCK.get().defaultBlockState(),
+                    (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.DEEPSLATE_BRICKS))));
+
+    public static final RegistryObject<Block> PILTOVER_SLAB = registerBlock("piltover_slab",
+            () -> new SlabBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.DEEPSLATE_BRICKS)));
+
+    public static final RegistryObject<Block> PILTOVER_BUTTON = registerBlock("piltover_button",
+            () -> new ButtonBlock (BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.MUD_BRICKS),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> PILTOVER_PRESSURE_PLATE = registerBlock("piltover_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> PILTOVER_FENCE = registerBlock("piltover_fence",
+            () -> new FenceBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.MUD_BRICKS)));
+
+    public static final RegistryObject<Block> PILTOVER_FENCE_GATE = registerBlock("piltover_fence_gate",
+            () -> new FenceGateBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.MUD_BRICKS),
+                    SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+
+    public static final RegistryObject<Block> PILTOVER_WALL = registerBlock("piltover_wall",
+            () -> new WallBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.MUD_BRICKS)));
+
+    public static final RegistryObject<Block> PILTOVER_DOOR = registerBlock("piltover_door",
+            () -> new DoorBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().sound(SoundType.MUD_BRICKS),
+                    BlockSetType.DARK_OAK));
+
+    public static final RegistryObject<Block> PILTOVER_TRAPDOOR = registerBlock("piltover_trapdoor",
+            () -> new TrapDoorBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().sound(SoundType.MUD_BRICKS),
+                    BlockSetType.DARK_OAK));
+
 
     public static final RegistryObject<Block> GEMSTONE_ORE = registerBlock("gemstone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)

@@ -24,8 +24,18 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModBlocks.GEMSTONE_ORE.get());
                       pOutput.accept(ModBlocks.DEEPSLATE_GEMSTONE_ORE.get());
                       pOutput.accept(ModBlocks.GEMSTONE_BLOCK.get());
-                      pOutput.accept(ModBlocks.PILTOVER_BLOCK.get());
                       pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+
+                      pOutput.accept(ModBlocks.PILTOVER_BLOCK.get());
+                      pOutput.accept(ModBlocks.PILTOVER_FENCE.get());
+                      pOutput.accept(ModBlocks.PILTOVER_FENCE_GATE.get());
+                      pOutput.accept(ModBlocks.PILTOVER_DOOR.get());
+                      pOutput.accept(ModBlocks.PILTOVER_TRAPDOOR.get());
+                      pOutput.accept(ModBlocks.PILTOVER_WALL.get());
+                      pOutput.accept(ModBlocks.PILTOVER_STAIRS.get());
+                      pOutput.accept(ModBlocks.PILTOVER_BUTTON.get());
+                      pOutput.accept(ModBlocks.PILTOVER_PRESSURE_PLATE.get());
+                      pOutput.accept(ModBlocks.PILTOVER_SLAB.get());
 
                       pOutput.accept(ModItems.GEMSTONE.get());
                       pOutput.accept(ModItems.REFINED_GEMSTONE.get());
@@ -37,6 +47,8 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModItems.WORLD_RUNE_SORCERY.get());
                       pOutput.accept(ModItems.WORLD_RUNE_RESOLVE.get());
                       pOutput.accept(ModItems.SHIMMER_SYRINGE.get());
+
+
 
                 })
                 .build());

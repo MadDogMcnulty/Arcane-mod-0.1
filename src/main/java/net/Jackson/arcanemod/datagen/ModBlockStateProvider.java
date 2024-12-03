@@ -3,7 +3,7 @@ package net.Jackson.arcanemod.datagen;
 import net.Jackson.arcanemod.ArcaneMod;
 import net.Jackson.arcanemod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -23,6 +23,27 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         //custom blocks
         blockWithItem(ModBlocks.SOUND_BLOCK);
+
+        stairsBlock(((StairBlock) ModBlocks.PILTOVER_STAIRS.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        slabBlock(((SlabBlock) ModBlocks.PILTOVER_SLAB.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()),
+                blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.PILTOVER_PRESSURE_PLATE.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        buttonBlock(((ButtonBlock) ModBlocks.PILTOVER_BUTTON.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        wallBlock(((WallBlock) ModBlocks.PILTOVER_WALL.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        fenceBlock(((FenceBlock) ModBlocks.PILTOVER_FENCE.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        fenceGateBlock(((FenceGateBlock) ModBlocks.PILTOVER_FENCE_GATE.get()), blockTexture(ModBlocks.PILTOVER_BLOCK.get()));
+
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.PILTOVER_DOOR.get()), modLoc("block/piltover_door_bottom"),
+                modLoc("block/piltover_door_top"), "cutout");
+
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PILTOVER_TRAPDOOR.get()),
+                modLoc("block/piltover_trapdoor"), true, "cutout");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

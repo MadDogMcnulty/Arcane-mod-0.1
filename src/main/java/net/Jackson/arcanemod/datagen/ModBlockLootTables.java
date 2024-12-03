@@ -34,6 +34,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.GEMSTONE_ORE.get(), ModItems.GEMSTONE_SHARD.get()));
         this.add(ModBlocks.DEEPSLATE_GEMSTONE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_GEMSTONE_ORE.get(), ModItems.GEMSTONE_SHARD.get()));
+
+        this.dropSelf(ModBlocks.PILTOVER_FENCE.get());
+        this.dropSelf(ModBlocks.PILTOVER_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PILTOVER_WALL.get());
+        this.dropSelf(ModBlocks.PILTOVER_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PILTOVER_BUTTON.get());
+        this.dropSelf(ModBlocks.PILTOVER_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PILTOVER_STAIRS.get());
+
+        this.add(ModBlocks.PILTOVER_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PILTOVER_SLAB.get()));
+        this.add(ModBlocks.PILTOVER_DOOR.get(),
+                block -> createDoorTable(ModBlocks.PILTOVER_DOOR.get()));
+
+
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
