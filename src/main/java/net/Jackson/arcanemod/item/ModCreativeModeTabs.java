@@ -21,15 +21,19 @@ public class ModCreativeModeTabs {
                 .title(Component.translatable("creativetab.arcane_tab"))
                 .displayItems((pParameters, pOutput) -> {
 
-                      pOutput.accept(ModItems.GEMSTONE_SHARD.get());
-                      pOutput.accept(ModItems.GEMSTONE.get());
-                      pOutput.accept(ModItems.REFINED_GEMSTONE.get());
-
-
-                      pOutput.accept(ModBlocks.GEMSTONE_BLOCK.get());
                       pOutput.accept(ModBlocks.GEMSTONE_ORE.get());
                       pOutput.accept(ModBlocks.DEEPSLATE_GEMSTONE_ORE.get());
+                      pOutput.accept(ModBlocks.GEMSTONE_BLOCK.get());
                       pOutput.accept(ModBlocks.PILTOVER_BLOCK.get());
+                      pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+
+                      pOutput.accept(ModItems.GEMSTONE.get());
+                      pOutput.accept(ModItems.REFINED_GEMSTONE.get());
+                      pOutput.accept(ModItems.GEMSTONE_SHARD.get());
+                      pOutput.accept(ModItems.GEMSTONE_SHARD_PILE.get());
+                      pOutput.accept(ModItems.WORLD_RUNE_ACCELERATE.get());
+                      pOutput.accept(ModItems.SHIMMER_SYRINGE.get());
+
                 })
                 .build());
 

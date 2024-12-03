@@ -2,11 +2,15 @@
   "item.arcanemod.gemstone_shard": "Hex Crystal Shard",
   "item.arcanemod.gemstone": "Unrefined Hex Crystal",
   "item.arcanemod.refined_gemstone": "Refined Hextech Gemstone",
+  "item.arcanemod.shimmer_syringe": "Syringe of Shimmer",
+  "item.arcanemod.gemstone_shard_pile": "Pile of Hex Crystal Shards",
+  "item.arcanemod.world_rune_accelerate": "World Rune: Acceleration Slate",
 
   "block.arcanemod.gemstone_block": "Hextech Block",
   "block.arcanemod.piltover_block": "Piltover Block",
   "block.arcanemod.gemstone_ore": "Hex Crystal Ore",
   "block.arcanemod.deepslate_gemstone_ore": "Deepslate Hex Crystal Ore",
+  "block.arcanemod.sound_block": "Sound Block",
 
   "creativetab.arcane_tab": "Arcane Mod"
 }
