@@ -32,6 +32,10 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModItems.GEMSTONE_SHARD.get());
                       pOutput.accept(ModItems.GEMSTONE_SHARD_PILE.get());
                       pOutput.accept(ModItems.WORLD_RUNE_ACCELERATE.get());
+                      pOutput.accept(ModItems.WORLD_RUNE_PRECISION.get());
+                      pOutput.accept(ModItems.WORLD_RUNE_DOMINATION.get());
+                      pOutput.accept(ModItems.WORLD_RUNE_SORCERY.get());
+                      pOutput.accept(ModItems.WORLD_RUNE_RESOLVE.get());
                       pOutput.accept(ModItems.SHIMMER_SYRINGE.get());
 
                 })

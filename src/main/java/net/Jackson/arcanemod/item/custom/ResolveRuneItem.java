@@ -12,14 +12,13 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AccelerateRuneItem extends Item {
-    public AccelerateRuneItem(Properties pProperties) {
+public class ResolveRuneItem extends Item {
+    public ResolveRuneItem(Properties pProperties) {
         super(pProperties);
     }
 
@@ -30,10 +29,9 @@ public class AccelerateRuneItem extends Item {
 
         if(!pLevel.isClientSide) {
 
-            pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 5));
+            pPlayer.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 8));
+            pPlayer.addEffect(new MobEffectInstance(MobEffects.WITHER, 1200, 1));
 
-            //change this to do less health damage if you are combined with a hexcore
-            pPlayer.hurt(pLevel.damageSources().magic(), 6f);
 
 
         }else{
@@ -74,7 +72,7 @@ public class AccelerateRuneItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.arcanemod.world_rune_accelerate.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.arcanemod.world_rune_resolve.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
 
 }}

@@ -1,9 +1,7 @@
 package net.Jackson.arcanemod.item;
 
 import net.Jackson.arcanemod.ArcaneMod;
-import net.Jackson.arcanemod.item.custom.AccelerateRuneItem;
-import net.Jackson.arcanemod.item.custom.FuelItem;
-import net.Jackson.arcanemod.item.custom.RefinedGemstoneItem;
+import net.Jackson.arcanemod.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,6 +24,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> WORLD_RUNE_ACCELERATE = ITEMS.register("world_rune_accelerate",
             () -> new AccelerateRuneItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WORLD_RUNE_PRECISION = ITEMS.register("world_rune_precision",
+            () -> new PrecisionRuneItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WORLD_RUNE_DOMINATION = ITEMS.register("world_rune_domination",
+            () -> new DominationRuneItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WORLD_RUNE_SORCERY = ITEMS.register("world_rune_sorcery",
+            () -> new SorceryRuneItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> WORLD_RUNE_RESOLVE = ITEMS.register("world_rune_resolve",
+            () -> new ResolveRuneItem(new Item.Properties()));
 
     public static final RegistryObject<Item> SHIMMER_SYRINGE = ITEMS.register("shimmer_syringe",
             () -> new Item(new Item.Properties().food(ModFoods.SHIMMER_SYRINGE)));
