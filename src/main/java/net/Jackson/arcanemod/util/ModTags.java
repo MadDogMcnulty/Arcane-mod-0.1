@@ -12,7 +12,8 @@ public class ModTags {
 
     public static class Blocks {
 
-        public static final TagKey<Block> PILTOVER_BLOCK_TYPE = tag("piltover_block_type.json");
+        public static final TagKey<Block> PILTOVER_BLOCK_TYPE = tag("piltover_block_type");
+        public static final TagKey<Block> NEEDS_HEXTECH_TOOL = tag("needs_hextech_tool");
 
 
 

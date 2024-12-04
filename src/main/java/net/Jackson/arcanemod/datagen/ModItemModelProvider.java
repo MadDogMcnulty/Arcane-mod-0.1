@@ -34,6 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WORLD_RUNE_SORCERY);
 
         simpleBlockItem(ModBlocks.PILTOVER_DOOR);
+
         fenceItem(ModBlocks.PILTOVER_FENCE, ModBlocks.PILTOVER_BLOCK);
         buttonItem(ModBlocks.PILTOVER_BUTTON, ModBlocks.PILTOVER_BLOCK);
         wallItem(ModBlocks.PILTOVER_WALL, ModBlocks.PILTOVER_BLOCK);
@@ -44,6 +45,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.PILTOVER_STAIRS);
         evenSimplerBlockItem(ModBlocks.PILTOVER_FENCE_GATE);
         evenSimplerBlockItem(ModBlocks.PILTOVER_SLAB);
+
+        trapdoorItem(ModBlocks.PILTOVER_TRAPDOOR);
+
+        handheldItem(ModItems.HEXTECH_SWORD);
+        handheldItem(ModItems.HEXTECH_PICKAXE);
+        handheldItem(ModItems.HEXTECH_AXE);
+        handheldItem(ModItems.HEXTECH_SHOVEL);
+        handheldItem(ModItems.HEXTECH_HOE);
+
+
     }
 
 //  builds the pathing for items
@@ -79,9 +90,16 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("texture", new ResourceLocation(ArcaneMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                 new ResourceLocation("item/handheld")).texture("layer0",
+                 new ResourceLocation(ArcaneMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
-        new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ArcaneMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 

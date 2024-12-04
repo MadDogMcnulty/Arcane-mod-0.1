@@ -9,6 +9,20 @@
   "item.arcanemod.world_rune_domination": "World Rune: Domination Slate",
   "item.arcanemod.world_rune_sorcery": "World Rune: Sorcery Slate",
   "item.arcanemod.world_rune_resolve": "World Rune: Resolve Slate",
+  "item.arcanemod.zdrive": "The Z-Drive",
+
+
+  "item.arcanemod.hextech_sword": "Hextech Sword",
+  "item.arcanemod.hextech_pickaxe": "Hextech Pickaxe",
+  "item.arcanemod.hextech_axe": "Hextech Axe",
+  "item.arcanemod.hextech_shovel": "Hextech Shovel",
+  "item.arcanemod.hextech_hoe": "Hextech Hoe",
+
+
+  "item.arcanemod.hextech_helmet": "Hextech helmet",
+  "item.arcanemod.hextech_chestplate": "Hextech chestplate",
+  "item.arcanemod.hextech_leggings": "Hextech leggings",
+  "item.arcanemod.hextech_boots": "Hextech boots",
 
 
   "block.arcanemod.gemstone_block": "Hextech Block",

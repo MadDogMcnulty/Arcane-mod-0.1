@@ -37,6 +37,8 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModBlocks.PILTOVER_PRESSURE_PLATE.get());
                       pOutput.accept(ModBlocks.PILTOVER_SLAB.get());
 
+
+                      pOutput.accept(ModItems.ZDRIVE.get());
                       pOutput.accept(ModItems.GEMSTONE.get());
                       pOutput.accept(ModItems.REFINED_GEMSTONE.get());
                       pOutput.accept(ModItems.GEMSTONE_SHARD.get());
@@ -46,6 +48,19 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModItems.WORLD_RUNE_DOMINATION.get());
                       pOutput.accept(ModItems.WORLD_RUNE_SORCERY.get());
                       pOutput.accept(ModItems.WORLD_RUNE_RESOLVE.get());
+
+                      pOutput.accept(ModItems.HEXTECH_SWORD.get());
+                      pOutput.accept(ModItems.HEXTECH_PICKAXE.get());
+                      pOutput.accept(ModItems.HEXTECH_AXE.get());
+                      pOutput.accept(ModItems.HEXTECH_SHOVEL.get());
+                      pOutput.accept(ModItems.HEXTECH_HOE.get());
+
+                      pOutput.accept(ModItems.HEXTECH_HELMET.get());
+                      pOutput.accept(ModItems.HEXTECH_CHESTPLATE.get());
+                      pOutput.accept(ModItems.HEXTECH_LEGGINGS.get());
+                      pOutput.accept(ModItems.HEXTECH_BOOTS.get());
+
+
                       pOutput.accept(ModItems.SHIMMER_SYRINGE.get());
 
 

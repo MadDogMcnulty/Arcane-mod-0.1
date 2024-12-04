@@ -41,6 +41,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_GEMSTONE_ORE.get()
                 );
 
+        this.tag(ModTags.Blocks.NEEDS_HEXTECH_TOOL)
+                .add(ModBlocks.SOUND_BLOCK.get());
+
+
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.PILTOVER_FENCE.get());
         this.tag(BlockTags.FENCE_GATES)
