@@ -6,6 +6,8 @@ import net.Jackson.arcanemod.item.ModCreativeModeTabs;
 import net.Jackson.arcanemod.item.ModItems;
 import net.Jackson.arcanemod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -52,7 +54,9 @@ public class ArcaneMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.TAINTED_FLOWER.getId(), ModBlocks.POTTED_TAINTED_FLOWER);
+        });
     }
 
 

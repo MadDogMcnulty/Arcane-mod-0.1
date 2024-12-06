@@ -57,6 +57,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.HEXTECH_SHOVEL);
         handheldItem(ModItems.HEXTECH_HOE);
 
+        simpleBlockItemBlockTexture(ModBlocks.TAINTED_FLOWER);
+
 
     }
 
@@ -104,6 +106,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ArcaneMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(ArcaneMod.MOD_ID, "block/" + item.getId().getPath()));
     }
 
 

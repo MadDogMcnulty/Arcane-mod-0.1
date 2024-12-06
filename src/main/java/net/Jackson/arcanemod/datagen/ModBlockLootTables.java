@@ -59,6 +59,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.TAINTED_WHEAT_CROP.get(), createCropDrops(ModBlocks.TAINTED_WHEAT_CROP.get(),
                 ModItems.TAINTED_WHEAT.get(), ModItems.TAINTED_SEEDS.get(), lootitemcondition$builder));
 
+        this.dropSelf(ModBlocks.TAINTED_FLOWER.get());
+        this.add(ModBlocks.POTTED_TAINTED_FLOWER.get(), createPotFlowerItemTable(ModBlocks.TAINTED_FLOWER.get()));
+
 
     }
 

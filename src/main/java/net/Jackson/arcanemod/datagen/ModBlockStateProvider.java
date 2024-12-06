@@ -54,6 +54,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeTaintedWheatCrop((CropBlock) ModBlocks.TAINTED_WHEAT_CROP.get(),
                 "tainted_wheat_stage", "tainted_wheat_stage");
 
+        simpleBlockWithItem(ModBlocks.TAINTED_FLOWER.get(), models().cross(blockTexture(ModBlocks.TAINTED_FLOWER.get()).getPath(),
+                blockTexture(ModBlocks.TAINTED_FLOWER.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_TAINTED_FLOWER.get(), models().singleTexture("potted_tainted_flower", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.TAINTED_FLOWER.get())).renderType("cutout"));
+
     }
 
     public void makeTaintedWheatCrop(CropBlock block, String modelName, String textureName) {

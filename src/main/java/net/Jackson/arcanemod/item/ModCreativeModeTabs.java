@@ -68,6 +68,7 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModItems.TAINTED_ROTTEN_FLESH.get());
                       pOutput.accept(ModItems.TAINTED_SEEDS.get());
                       pOutput.accept(ModItems.TAINTED_WHEAT.get());
+                      pOutput.accept(ModBlocks.TAINTED_FLOWER.get());
 
                       //Shimmer
                       pOutput.accept(ModItems.SHIMMER_SYRINGE.get());
