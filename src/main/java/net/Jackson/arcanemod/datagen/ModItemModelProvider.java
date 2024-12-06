@@ -27,6 +27,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GEMSTONE_SHARD_PILE);
         simpleItem(ModItems.REFINED_GEMSTONE);
         simpleItem(ModItems.SHIMMER_SYRINGE);
+        simpleItem(ModItems.TAINTED_ROTTEN_FLESH);
+        simpleItem(ModItems.TAINTED_SEEDS);
+        simpleItem(ModItems.TAINTED_WHEAT);
         simpleItem(ModItems.WORLD_RUNE_ACCELERATE);
         simpleItem(ModItems.WORLD_RUNE_DOMINATION);
         simpleItem(ModItems.WORLD_RUNE_PRECISION);

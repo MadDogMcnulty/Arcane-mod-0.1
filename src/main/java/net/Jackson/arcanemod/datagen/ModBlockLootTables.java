@@ -1,7 +1,9 @@
 package net.Jackson.arcanemod.datagen;
 
 import net.Jackson.arcanemod.block.ModBlocks;
+import net.Jackson.arcanemod.block.custom.TaintedWheatCropBlock;
 import net.Jackson.arcanemod.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -13,6 +15,8 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
@@ -48,6 +52,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PILTOVER_DOOR.get(),
                 block -> createDoorTable(ModBlocks.PILTOVER_DOOR.get()));
 
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.TAINTED_WHEAT_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TaintedWheatCropBlock.AGE, 5));
+
+        this.add(ModBlocks.TAINTED_WHEAT_CROP.get(), createCropDrops(ModBlocks.TAINTED_WHEAT_CROP.get(),
+                ModItems.TAINTED_WHEAT.get(), ModItems.TAINTED_SEEDS.get(), lootitemcondition$builder));
 
 
     }

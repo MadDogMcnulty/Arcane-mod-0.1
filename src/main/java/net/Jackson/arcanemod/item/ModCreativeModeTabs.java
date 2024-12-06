@@ -49,18 +49,27 @@ public class ModCreativeModeTabs {
                       pOutput.accept(ModItems.WORLD_RUNE_SORCERY.get());
                       pOutput.accept(ModItems.WORLD_RUNE_RESOLVE.get());
 
+                      //Hextech tools
                       pOutput.accept(ModItems.HEXTECH_SWORD.get());
                       pOutput.accept(ModItems.HEXTECH_PICKAXE.get());
                       pOutput.accept(ModItems.HEXTECH_AXE.get());
                       pOutput.accept(ModItems.HEXTECH_SHOVEL.get());
                       pOutput.accept(ModItems.HEXTECH_HOE.get());
 
-                      pOutput.accept(ModItems.HEXTECH_HELMET.get());
-                      pOutput.accept(ModItems.HEXTECH_CHESTPLATE.get());
-                      pOutput.accept(ModItems.HEXTECH_LEGGINGS.get());
-                      pOutput.accept(ModItems.HEXTECH_BOOTS.get());
+                      //Hextech armor if i get around to it
+//                      pOutput.accept(ModItems.HEXTECH_HELMET.get());
+//                      pOutput.accept(ModItems.HEXTECH_CHESTPLATE.get());
+//                      pOutput.accept(ModItems.HEXTECH_LEGGINGS.get());
+//                      pOutput.accept(ModItems.HEXTECH_BOOTS.get());
 
 
+                      //Hex Tainted stuff
+
+                      pOutput.accept(ModItems.TAINTED_ROTTEN_FLESH.get());
+                      pOutput.accept(ModItems.TAINTED_SEEDS.get());
+                      pOutput.accept(ModItems.TAINTED_WHEAT.get());
+
+                      //Shimmer
                       pOutput.accept(ModItems.SHIMMER_SYRINGE.get());
 
 

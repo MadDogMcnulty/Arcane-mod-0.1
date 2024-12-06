@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.Jackson.arcanemod.block.ModBlocks;
 import net.Jackson.arcanemod.item.ModCreativeModeTabs;
 import net.Jackson.arcanemod.item.ModItems;
+import net.Jackson.arcanemod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -37,6 +38,8 @@ public class ArcaneMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

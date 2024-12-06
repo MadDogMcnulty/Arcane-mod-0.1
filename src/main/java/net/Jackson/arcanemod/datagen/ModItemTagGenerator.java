@@ -25,6 +25,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.HAS_SHIMMER)
                 .add(ModItems.SHIMMER_SYRINGE.get());
+
+        this.tag(ModTags.Items.HAS_TAINTED)
+                .add(ModItems.TAINTED_ROTTEN_FLESH.get())
+                .add(ModItems.TAINTED_SEEDS.get())
+                .add(ModItems.TAINTED_WHEAT.get());
+
+
     }
 
 

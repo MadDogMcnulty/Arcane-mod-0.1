@@ -1,6 +1,7 @@
 package net.Jackson.arcanemod.item;
 
 import net.Jackson.arcanemod.ArcaneMod;
+import net.Jackson.arcanemod.block.ModBlocks;
 import net.Jackson.arcanemod.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,7 +15,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> GEMSTONE_SHARD = ITEMS.register("gemstone_shard",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(), 1000));
     public static final RegistryObject<Item> GEMSTONE_SHARD_PILE = ITEMS.register("gemstone_shard_pile",
             () -> new FuelItem(new Item.Properties(), 4000));
 
@@ -64,7 +65,18 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.GEMSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
+    //Hex Tainted items
 
+    public static final RegistryObject<Item> TAINTED_ROTTEN_FLESH = ITEMS.register("tainted_rotten_flesh",
+            () -> new Item(new Item.Properties().food(ModFoods.TAINTED_ROTTEN_FLESH)));
+
+    //Crops
+    public static final RegistryObject<Item> TAINTED_SEEDS = ITEMS.register("tainted_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TAINTED_WHEAT_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> TAINTED_WHEAT = ITEMS.register("tainted_wheat",
+            () -> new Item(new Item.Properties()));
+
+    //Shimmer Items
     public static final RegistryObject<Item> SHIMMER_SYRINGE = ITEMS.register("shimmer_syringe",
             () -> new Item(new Item.Properties().food(ModFoods.SHIMMER_SYRINGE)));
 

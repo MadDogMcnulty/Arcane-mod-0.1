@@ -2,6 +2,7 @@ package net.Jackson.arcanemod.block;
 
 import net.Jackson.arcanemod.ArcaneMod;
 import net.Jackson.arcanemod.block.custom.SoundBlock;
+import net.Jackson.arcanemod.block.custom.TaintedWheatCropBlock;
 import net.Jackson.arcanemod.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -62,6 +63,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> PILTOVER_TRAPDOOR = registerBlock("piltover_trapdoor",
             () -> new TrapDoorBlock (BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().sound(SoundType.MUD_BRICKS),
                     BlockSetType.DARK_OAK));
+
+    public static final RegistryObject<Block> TAINTED_WHEAT_CROP = BLOCKS.register("tainted_wheat_crop",
+            () -> new TaintedWheatCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
     public static final RegistryObject<Block> GEMSTONE_ORE = registerBlock("gemstone_ore",

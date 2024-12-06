@@ -31,6 +31,12 @@ public class ModTags {
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(ArcaneMod.MOD_ID, name));
         }
+
+        public static final TagKey<Item> HAS_TAINTED = Taintedtag("has_tainted.json");
+
+        public static final TagKey<Item> Taintedtag(String name) {
+            return ItemTags.create(new ResourceLocation(ArcaneMod.MOD_ID, name));
+        }
     }
 
 
